@@ -76,19 +76,19 @@ if(searchTimeNow - searchTime <= periodOne){
  leftDirection = false;
  rightDirection = true;
  leftSpeed = 50;
- rightSpeed = 25;
+ rightSpeed = 5;
  motorFunction ();
 } else if (searchTimeNow - searchTime <= periodTwo){
- leftDirection = false;
+ leftDirection = true;
  rightDirection = false;
- leftSpeed = 50;
+ leftSpeed = 5;
  rightSpeed = 50;
 motorFunction ();
 } else if (searchTimeNow - searchTime <= periodThree){
  leftDirection = true; 
  rightDirection = false;
  leftSpeed = 25; 
- rightSpeed = 50;
+ rightSpeed = 5;
  motorFunction ();
 } 
 else {
